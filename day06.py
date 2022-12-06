@@ -11,7 +11,7 @@ def find_start(msg, size):
 def main():
     part1 = None
     part2 = None
-    msg = list(input)[0].strip()
+    msg = input.all
     part1 = find_start(msg, 4)
     part2 = find_start(msg, 14)
 
