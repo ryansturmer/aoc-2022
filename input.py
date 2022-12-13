@@ -7,7 +7,6 @@ class AOCInput(object):
             filename = 'input.txt'
         with open(filename) as fp:
             return iter([line.rstrip('\n') for line in fp.readlines()])
-
     @property
     def all(self):
         try:
@@ -16,5 +15,4 @@ class AOCInput(object):
             filename = 'input.txt'
         with open(filename) as fp:
             return fp.read()
-
 sys.modules[__name__] = AOCInput()
